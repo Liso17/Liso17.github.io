@@ -1,0 +1,223 @@
+body{
+  font-family: "Poppins";
+  background: rgb(175, 172, 172);
+  margin: 0;
+  padding: 0;
+  background-image: url(fondo-madera-natural.jpg);
+  background-size: cover;
+}
+
+p {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+list-style: none;
+margin-right: 20px;
+font-size: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.lista {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.titular {
+text-align: center;
+margin-top: 200px;
+color: #4b1f06cc ;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+h2 {
+font-size: 25px;
+margin-bottom: 30px;
+}
+
+a {
+  font-size: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+  display: inline-block;
+}
+
+header {
+  height: 100vh;
+}
+
+.contenedor{
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 25px;
+}
+
+/*ARRANCA SECCION SOBRE NOSOTROS*/
+
+h3 {
+  text-align: center;
+  font-size: 55px;
+  font-weight: normal;
+}
+
+.contenedor-parrafo {
+    width: 70%;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    margin: auto;
+    padding-bottom: 60px;
+}
+  
+  .contenedor-parrafo p{
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/*ARRANCA SECCION NUESTROS TRABAJOS*/
+
+h4 {
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 16px;
+}
+
+p {
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  padding: 16px;
+}
+
+.publicacion {
+  width: 80%;
+  background-color: rgba(255, 219, 172, 0.767);
+  text-align: center;
+  border-radius: 10px;
+  display: block;
+  padding: 10px;
+}
+
+.boton-trabajo {
+  font-size: 14px;
+  background: #753008cc;
+  border-radius: 7px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+  display: inline-block;
+  transition: 1s;
+}
+
+span {
+  font-size: 150px;
+  color: #087523d5
+}
+
+.owl-nav {
+  text-align: center;
+  margin: 0;
+}
+
+#trabajos a:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+
+/*ARRANCA SECCION CONTACTO*/
+
+#contacto {
+  background: linear-gradient(rgb(95, 43, 3),rgba(166, 109, 65,.9));
+  text-align: center;
+}
+
+#contacto h3{
+  color: rgba(255, 255, 255, 0.753);
+  font-size: 33px;
+  font-weight: bold;
+  padding-top: 25px;
+  margin-bottom: 25px;
+  margin: 0;
+}
+
+#contacto a{
+  font-size: 16px;
+  background: hsla(106, 87%, 25%, 0.8);
+  border-radius: 7px;
+  padding: 15px 40px 15px 40px;
+  color: rgb(255, 255, 255);
+  transition: 1s;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+#contacto a:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+/*ARRANCA SECCION WHATSAPP*/
+
+#whatsapp a {
+  background: none;
+  position: fixed;
+  top: 85%;
+  left: 85%;
+  width: 250px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  /*Se va a aplicar cuando  el MAXIMO DE ANCHO sea de 480px*/
+  nav {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    background:  #753008cc;
+    width: 100%;
+    display: none;
+  }
+
+  nav .lista{
+    flex-direction: column;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 25px;
+  }
+
+  #whatsapp a {
+    left: 72%;
+    top: 85%;
+  }
+}
